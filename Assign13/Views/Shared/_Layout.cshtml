@@ -26,7 +26,7 @@
 </style>
 </head>
 
-<body>
+<body class="bg-warning">
     <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark">
         <div class="container">
             @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
@@ -51,15 +51,16 @@
         <h1 class="mx-auto">Cricket Info Web</h1>
     </header>
 
-    @Html.Partial("_HeaderPartial")
+   
     <div class="container body-content">
+        @Html.Partial("_HeaderPartial")
         @RenderBody()
         <hr />
 
     </div>
-    <footer class="footer">
+    <footer class="footer bg-dark text-center text-white">
         <div class="container">
-            <p>ALL Rights Reserved</p>
+            <p> All Right Reserved</p>
         </div>
     </footer>
     @Scripts.Render("~/bundles/jquery")
